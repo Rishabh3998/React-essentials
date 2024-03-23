@@ -1,6 +1,7 @@
 import { reactDescriptions } from "../../constants";
 import { getRandomInt } from "../../utils";
 import reactImg from "../../assets/react-core-concepts.png";
+import "./index.css";
 
 const Header = () => {
   const randomDescription = reactDescriptions[getRandomInt(2)];

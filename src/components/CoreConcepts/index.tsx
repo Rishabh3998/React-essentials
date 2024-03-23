@@ -1,4 +1,5 @@
 import { ICoreConcepts } from "../../types";
+import "./index.css";
 
 const CoreConcepts = ({ title, description, imgUrl }: ICoreConcepts) => {
   return (
