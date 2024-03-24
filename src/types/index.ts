@@ -1,4 +1,4 @@
-export interface ICoreConcepts {
+export interface ICoreConcept {
   title: string;
   description: string;
   imgUrl: string;

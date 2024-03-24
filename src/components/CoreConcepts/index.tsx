@@ -1,13 +1,23 @@
-import { ICoreConcepts } from "../../types";
-import "./index.css";
+import { CORE_CONCEPTS } from "../../data";
+import CoreConcept from "../CoreConcept";
 
-const CoreConcepts = ({ title, description, imgUrl }: ICoreConcepts) => {
+const CoreConcepts = () => {
   return (
-    <li>
-      <img src={imgUrl} alt={title} />
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </li>
+    <>
+      <h2>Core concepts</h2>
+      <ul>
+        {CORE_CONCEPTS?.map((item, index) => {
+          return (
+            <CoreConcept
+              key={index}
+              title={item.title}
+              description={item.description}
+              imgUrl={item.image}
+            />
+          );
+        })}
+      </ul>
+    </>
   );
 };
 
